@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant+SC">
+  <link rel="stylesheet" href="styles.css">
+  <title>Let's DJJJJJ</title>
+</head>
+
+<!--body-->
+
+<body background="http://howtobecomeadj.net/wp-content/uploads/how-to-become-a-dj.jpg">
+
+  <div id="nav">
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#">Student</a></li>
+      <li role="presentation"><a href="/Users/yijieyang/Desktop/Atom/atom-teacher.html">Teacher</a></li>
+      <li role="presentation"><a href="/Users/yijieyang/Desktop/Atom/logIn.html">Log In</a></li>
+  </div>
+
+  </ul>
+  </div>
+  <div class="container-fluid">
+    <div class="page-header">
+      <h1>LET'S DJJJJJ</h1>
+      <h3>Self-studying Platform for DJ Beginners </h3>
+    </div>
+    <div class="row">
+      <!--left side-->
+      <div class="col-md-8 col-sm-8 col-xs-12">
+        <div id="First thing first">
+          <h2 class="bg-primary">First Thing First</h2>
+
+          <div class="well">
+            <!--JS-->
+            <p>Hey there <span id="djNameOne">guest</span>, welcome to Let's DJJJJJ, your personal self-studying DJ platform. Excited? Ready to rule the stage? Let's check how well you are equipped! </p>
+            <form action="/check-DJ-equipment">
+              <label><input type="checkbox" name="DJ-equipment" checked> DJ Turner Tables</label>
+              <label><input type="checkbox" name="DJ-equipment"> DJ Cartridges</label>
+              <label><input type="checkbox" name="DJ-equipment"> DJ Mixer</label>
+              <label><input type="checkbox" name="DJ-equipment"> DJ Controllers</label>
+              <label><input type="checkbox" name="DJ-equipment"> DJ Headphones</label>
+              <label><input type="checkbox" name="DJ-equipment"> RCA Cable</label>
+              <label><input type="checkbox" name="DJ-equipment"> Computer</label>
+              <label><input type="checkbox" name="DJ-equipment"> Nahh computers, USB!</label>
+              <label><input type="checkbox" name="DJ-equipment"> Nahh digital, Vinyl Records! </label>
+              <label><input type="checkbox" name="DJ-equipment"> DJ Interface Package such as Serato Scratch Live, Traktor Scratch, etc. </label>
+              <label><input type="checkbox" name="DJ-equipment"> External Speaker </label>
+              <br>
+              <button type="submit">That's all I got</button>
+            </form>
+            <p>No idea? Check the <a href="https://www.turntablelab.com/pages/beginners-guide-to-dj-equipment-setups">Beginners Guide to DJ equipment Setups</a></p>
+          </div>
+        </div>
+        <div id="Intro Video">
+          <h2 class="bg-primary">My Tutorial Video</h2>
+          <div class="well">
+
+            <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div id="tutorialVideo" class="embed-responsive embed-responsive-4by3">
+                  <iframe width=100% height=auto src="https://www.youtube.com/embed/85fHCtIb6ZU?list=PL_YqEG_6NcDsHudcr-jjgMs_tVhrK2nbw" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <p>At the beginning of this class, you'll get to learn a song's structure and learn to set cue points in a song when you're DJing. Watch this video first and then practice with us!</p>
+                <button id="goToNextVideo" type="button" class="btn btn-default" onclick="goToNextVideo()">
+                  Go to next video
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Class1-Cue-Points">
+          <h2 class="bg-primary">Let's Practice-Song Structure</h2>
+          <!--this part's function is incomplement due to lack of javascripts-->
+          <div class="well">
+            <p>Listen to different parts of the song, count the bars and select its role in the song.</p>
+<!--test 1-->
+<div class="panel panel-default">
+            <audio controls>
+  <source src="roses.mp3" type="audio/mpeg">
+    </audio>
+    <input type="text" name="testOneBar" placeholder="type in number of the bars">
+
+</div>
+            <a href="#">Go to next practice</a>
+          </div>
+        </div>
+
+      </div>
+      <!--Right side-->
+
+      <div class="col-md-4 col-sm-4 col-xs-12 well" id="submitMusic">
+        <form>
+          <div class="form-group">
+            <h4 class="text-black">Submit Your Music Piece</h4>
+            <label for="DJ Name">DJ Name</label>
+            <input type="name" class="form-control" id="InputName" placeholder="DJ Name">
+          </div>
+          <div class="form-group">
+            <label for="InputPassword">Password</label>
+            <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="InputFile">File input</label>
+            <input type="file" id="InputFile">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 well" id="community">
+        <h4 class="text-black">Community</h4>
+        <div class="panel panel-default row">
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <br>
+            <img src="http://cdn.vashtie.com/blog/wp-content/uploads/2015/10/vashtie-dj-recrop.jpg" alt="community-profile1" width=60px height=60px>
+            <p>DJ Yijieee</p>
+            <button id="saveMusic" type="button" class="btn btn-default" aria-label="Left Align" onclick="saveMusic()">
+  <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+    16
+</button>
+            <button id="likeMusic" type="button" class="btn btn-default" aria-label="Left Align" onclick="likeMusic()">
+  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+</button>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-8">
+            <p>Hi guys, check out my new remix</p>
+            <audio controls>
+<source src="roses.mp3" type="audio/mpeg">
+Roses-The Chainsmokers, ROZES
+</audio>
+          </div>
+        </div>
+        <div class="panel panel-default row">
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <br>
+            <img src="http://cdn.vashtie.com/blog/wp-content/uploads/2015/10/vashtie-dj-recrop.jpg" alt="community-profile1" width=60px height=60px>
+            <p>DJ JS is too hard</p>
+            <button  type="button" class="btn btn-default" aria-label="Left Align" onclick="saveMusic()">
+  <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span><div id="saveMusic">
+    20
+  </div>
+</button>
+            <button id="likeMusic" type="button" class="btn btn-default" aria-label="Left Align" onclick="likeMusic()">
+  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+</button>
+          </div>
+          <div class="col-md-8 col-sm-8 col-xs-8">
+            <p>I just found this webpage teaching you how to better scratching, check it out! </p>
+          </div>
+        </div>
+        <!--this part is incomplete-->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,34 +1,35 @@
+body {
+  font-family: 'Cormorant SC', times;
+}
 
-  body {
-    font-family: 'Cormorant SC', times;
-  }
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+}
 
-  h1 {
-    font-weight: bold;
-    font-size: 80px;
-  }
+.well {
+  opacity: 0.95;
+}
 
-  .well {
-    opacity: 0.95;
-  }
+h1, h2, h3 {
+  color: white;
+}
 
-  h1,
-  h2,
-  h3 {
-    color: white;
-  }
+p {
+  font-family: times;
+}
 
-  p {
-    font-family: times;
-  }
+.bg-primary {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  opacity: 0.9;
+}
 
-  .bg-primary {
-    background-color: rgb(100, 100, 100);
-    color: white;
-    opacity: 0.9;
-  }
+.text-black {
+  color: rgb(100, 100, 100);
+}
 
-  .text-black {
-    color: rgb(100, 100, 100);
-  }
-  .panel{opacity:0.9;}
+.panel {
+  opacity: 0.9;
+  padding: 10px 10px;
+}

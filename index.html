@@ -78,13 +78,70 @@
           <!--this part's function is incomplement due to lack of javascripts-->
           <div class="well">
             <p>Listen to different parts of the song, count the bars and select its role in the song.</p>
+
             <!--test 1-->
+
             <div class="panel panel-default">
               <audio controls>
-  <source src="roses.mp3" type="audio/mpeg">
-    </audio>
-              <input type="text" name="testOneBar" placeholder="type in number of the bars">
-
+                 <source src="sample1.mp3" type="audio/mpeg">
+              </audio>
+              <br>
+              <div id="testBar">
+                <input type="text" name="testOneBar" placeholder="Number of the bars">
+              </div>
+              <div id="testRole" class="form-group">
+                <br>
+                <label>That song structure is this part?</label>
+                <div class="radio">
+                  <label>
+									  <input type="radio" name="song structure" value="intro">
+									  Intro
+									</label>
+                </div>
+                <div class="radio">
+                  <label>
+									  <input type="radio" name="song structure" value="verse1">
+									  Verse 1
+									</label>
+                </div>
+                <div class="radio">
+                  <label>
+									  <input type="radio" name="song structure" value="chorus1">
+									  Chorus 1
+									</label>
+                </div>
+                <div class="radio">
+                  <label>
+									  <input type="radio" name="song structure" value="verse2">
+									  Verse 2
+									</label>
+                </div>
+                <div class="radio">
+                  <label>
+									  <input type="radio" name="song structure" value="chorus2">
+									  Chorus 2
+									</label>
+                </div>
+                <div class="radio">
+                  <label>
+									  <input type="radio" name="song structure" value="bridge">
+									  Bridge
+									</label>
+                </div>
+                <div class="radio">
+                  <label>
+									  <input type="radio" name="song structure" value="chorus3">
+									 Chorus 3
+									</label>
+                </div>
+                <div class="radio">
+                  <label>
+									  <input type="radio" name="song structure" value="ending">
+									  Ending
+									</label>
+                </div>
+              </div>
+              <button type="submit">Submit my answer</button>
             </div>
             <a href="#">Go to next practice</a>
           </div>
@@ -115,7 +172,6 @@
         <h4 class="text-black">Community</h4>
         <div class="panel panel-default row">
           <div class="col-md-5 col-sm-5 col-xs-5">
-            <br>
             <img src="http://cdn.vashtie.com/blog/wp-content/uploads/2015/10/vashtie-dj-recrop.jpg" alt="community-profile1" width=80px height=auto>
             <p>DJ JS-is-toooo-hard</p>
             <button id="saveMusic" type="button" class="btn btn-default" aria-label="Left Align" onclick="saveMusic()">

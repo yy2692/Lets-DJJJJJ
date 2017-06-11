@@ -60,8 +60,8 @@
 
             <div class="row">
               <div class="col-md-6 col-sm-6 col-xs-12">
-                <div id="tutorialVideo" class="embed-responsive embed-responsive-4by3">
-                  <iframe width=100% height=auto src="https://www.youtube.com/embed/85fHCtIb6ZU?list=PL_YqEG_6NcDsHudcr-jjgMs_tVhrK2nbw" frameborder="0" allowfullscreen></iframe>
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe id="tutorialVideo" width=100% height=auto src="https://www.youtube.com/embed/85fHCtIb6ZU?list=PL_YqEG_6NcDsHudcr-jjgMs_tVhrK2nbw" frameborder="0" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-6 col-sm-6 col-xs-12">
@@ -78,14 +78,14 @@
           <!--this part's function is incomplement due to lack of javascripts-->
           <div class="well">
             <p>Listen to different parts of the song, count the bars and select its role in the song.</p>
-<!--test 1-->
-<div class="panel panel-default">
-            <audio controls>
+            <!--test 1-->
+            <div class="panel panel-default">
+              <audio controls>
   <source src="roses.mp3" type="audio/mpeg">
     </audio>
-    <input type="text" name="testOneBar" placeholder="type in number of the bars">
+              <input type="text" name="testOneBar" placeholder="type in number of the bars">
 
-</div>
+            </div>
             <a href="#">Go to next practice</a>
           </div>
         </div>
@@ -114,48 +114,31 @@
       <div class="col-md-4 col-sm-4 col-xs-12 well" id="community">
         <h4 class="text-black">Community</h4>
         <div class="panel panel-default row">
-          <div class="col-md-4 col-sm-4 col-xs-4">
+          <div class="col-md-5 col-sm-5 col-xs-5">
             <br>
-            <img src="http://cdn.vashtie.com/blog/wp-content/uploads/2015/10/vashtie-dj-recrop.jpg" alt="community-profile1" width=60px height=60px>
-            <p>DJ Yijieee</p>
+            <img src="http://cdn.vashtie.com/blog/wp-content/uploads/2015/10/vashtie-dj-recrop.jpg" alt="community-profile1" width=80px height=auto>
+            <p>DJ JS-is-toooo-hard</p>
             <button id="saveMusic" type="button" class="btn btn-default" aria-label="Left Align" onclick="saveMusic()">
-  <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
-    16
-</button>
+             <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>
+            <span id="num1">16</span>
+            </button>
             <button id="likeMusic" type="button" class="btn btn-default" aria-label="Left Align" onclick="likeMusic()">
-  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-</button>
+             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span id="num2">20</span>
+            </button>
           </div>
-          <div class="col-md-8 col-sm-8 col-xs-8">
+          <div class="col-md-7 col-sm-7 col-xs-7">
+            <br>
             <p>Hi guys, check out my new remix</p>
             <audio controls>
-<source src="roses.mp3" type="audio/mpeg">
-Roses-The Chainsmokers, ROZES
-</audio>
+           <source src="roses.mp3" type="audio/mpeg">
+           Roses-The Chainsmokers, ROZES
+             </audio>
           </div>
         </div>
-        <div class="panel panel-default row">
-          <div class="col-md-4 col-sm-4 col-xs-4">
-            <br>
-            <img src="http://cdn.vashtie.com/blog/wp-content/uploads/2015/10/vashtie-dj-recrop.jpg" alt="community-profile1" width=60px height=60px>
-            <p>DJ JS is too hard</p>
-            <button  type="button" class="btn btn-default" aria-label="Left Align" onclick="saveMusic()">
-  <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span><div id="saveMusic">
-    20
-  </div>
-</button>
-            <button id="likeMusic" type="button" class="btn btn-default" aria-label="Left Align" onclick="likeMusic()">
-  <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-</button>
-          </div>
-          <div class="col-md-8 col-sm-8 col-xs-8">
-            <p>I just found this webpage teaching you how to better scratching, check it out! </p>
-          </div>
-        </div>
-        <!--this part is incomplete-->
       </div>
     </div>
   </div>
+  <script src="main.js"></script>
 </body>
 
 </html>

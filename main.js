@@ -8,14 +8,14 @@ function goToNextVideo(){
 function logIn(){
   var username = document.querySelector('#userName').value;
   document.querySelector('#djNameOne').innerText = username;
-  location.href="/Users/yijieyang/Desktop/Atom/atom-student.html";
+  location.href="index.html";
 }
 
 function signUp(){
   var username = document.querySelector('#userName').value;
   document.querySelector('#djNameOne').innerText = username;
   alert("Thank you for signing up! " + username + "!");
-  location.href="/Users/yijieyang/Desktop/Atom/atom-student.html";
+  location.href="index.html";
 }
 
 function saveMusic() {
